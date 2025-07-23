@@ -105,10 +105,6 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
-      auth-service:
-        condition: service_healthy
-      problem-service:
-        condition: service_healthy
 
 volumes:
   mysql-data:
