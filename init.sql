@@ -1,0 +1,4 @@
+CREATE DATABASE auth;
+CREATE DATABASE execution;
+CREATE DATABASE problems;
+EXIT;
