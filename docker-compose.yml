@@ -81,6 +81,9 @@ services:
       MYSQL_PASSWORD: root
       SERVICE_PROBLEM_URL: http://problem-service:6000/
       SERVER_PORT: 6001
+      EXECUTION_DIRECTORY: /app/UserSubmittedCodes   # Add this
+    volumes:
+      - ./UserSubmittedCodes:/app/UserSubmittedCodes  # Add this volume mapping
     depends_on:
       mysql:
         condition: service_healthy
